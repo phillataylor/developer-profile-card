@@ -21,13 +21,11 @@ function App() {
 
 function Avatar() {
   return (
-    <div>
-      <img
-        className="avatar"
-        src="/PhillpTaylorBioPic.jpg"
-        alt="Phillip Taylor, Full Stack Web Developer"
-      />
-    </div>
+    <img
+      className="avatar"
+      src="/PhillpTaylorBioPic.jpg"
+      alt="Phillip Taylor, Full Stack Web Developer"
+    />
   );
 }
 
@@ -71,7 +69,7 @@ function Skill({ skillObj }) {
       className="skill"
       style={{
         margin: `3px 3px`,
-        backgroundColor: `${skillObj.bgcolor}`,
+        backgroundColor: skillObj.bgcolor,
         lineHeight: `2rem`,
       }}
     >{`${skillObj.skill} ${skillObj.emoji}`}</div>
